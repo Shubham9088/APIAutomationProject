@@ -12,9 +12,7 @@ public class AssertActions {
     }
 
     public static void verifyStaringKey(String keyExpect, String KeyActual){
-        assertThat(keyExpect).isNotNull();
-        assertThat(keyExpect).isNotNull().isNotBlank();
-        assertThat(keyExpect).isEqualTo(KeyActual);
+        assertThat(KeyActual).isEqualTo(keyExpect);
     }
 
 

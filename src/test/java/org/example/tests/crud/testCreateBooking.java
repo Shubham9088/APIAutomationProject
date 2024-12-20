@@ -19,6 +19,7 @@ public class testCreateBooking extends BaseTest {
                     .when()
                     .body(PayloadManager.createPayloadBookingAsString()).post();
 
+        //deserilization
         BookingResponse bookingResponse= PayloadManager.bookingResponse(response.asString());
 
         //Verify status code
